@@ -1,0 +1,17 @@
+{
+  "name": "web-share",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Aarjav Jain <aarjavjain2309@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "serve": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
