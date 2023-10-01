@@ -7,8 +7,10 @@ const connectDB = require("./config/db");
 connectDB();
 
 const filesRouter = require("./routes/files");
+const showRouter = require("./routes/show");
 
 app.use("/api/files", filesRouter);
+app.use("/files", showRouter);
 
 app.get("/", (req, res) => {
   res.send("default route");

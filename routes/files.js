@@ -15,7 +15,7 @@ const storage = multer.diskStorage({
   },
 });
 
-//fileSize (in MB) here set to 10 MB
+//fileSize (in bytes) here set to 10 MB
 let upload = multer({ storage: storage, limits: { fileSize: 1000000 * 10 } });
 let fileUpload = upload.single("myfile");
 
@@ -42,5 +42,5 @@ router.post("/", (req, res) => {
   });
 });
 
-router.get("/", (req, res) => res.send("adnaskn"));
+// router.get("/", (req, res) => res.send("adnaskn"));
 module.exports = router;
